@@ -553,6 +553,13 @@ section {
   color: #4e4039;
 }
 
+@media (max-width: 768px) {
+  .about h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
 .about h4 {
   font-size: 20px;
   font-weight: 700;
