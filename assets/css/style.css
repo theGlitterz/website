@@ -1112,6 +1112,12 @@ section {
   color: #fff;
 }
 
+.glitterz_icons {
+  height:24px;
+  width:24px;
+}
+
+
 .contact .php-email-form {
   width: 100%;
   border-top: 3px solid #eb5d1e;
