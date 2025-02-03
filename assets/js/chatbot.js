@@ -173,11 +173,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Predefined FAQ answers
     const faqAnswers = {
-      'What services do you offer?': 'We offer web development, mobile app development, and IT support.',
-      'Do you build mobile apps?': 'Yes, we specialize in building both Android and iOS mobile apps.',
-      'How can I contact your team?': 'You can contact our team through email: contact@glitterztech.com.',
-      'What industries do you specialize in?': 'We specialize in the tech, healthcare, and finance industries.',
-      'Do you provide IT support?': 'Yes, we offer full IT support including cloud computing, cybersecurity, and more.'
+     'What services do you offer?': 'We offer end-to-end digital marketing, web & mobile app development, IT consulting, logo and website design, digital branding, UI/UX design, and more.',
+'Do you build mobile apps?': 'Yes, we specialize in building mobile apps for both Android and iOS. Whether you\'re building from scratch or upgrading, we’ve got you covered!',
+'How can I contact your team?': 'You can reach out to us via email: contact@glitterztech.com, or drop us a DM on Instagram @glitterztech.',
+'What industries do you specialize in?': 'We specialize in providing custom solutions for SMEs in sectors like retail, startups, e-commerce, and more. Whatever your business, we’ve got a solution!',
+'Do you provide IT support?': 'Yes, we offer comprehensive IT support, including cloud computing, cybersecurity, and more to keep your business running smoothly.',
+'How long does it take to develop a custom website or app?': 'Timeline varies: basic websites take 2-4 weeks, while more complex apps can take 2-6 months. We work closely with you to ensure timely delivery.',
+'Can you redesign my existing website?': 'Yes! We can redesign your website to make it modern, responsive, and user-friendly for better performance and engagement.',
+'How do I get started?': 'Click "Get a Quote" on our site, fill out a form, and we’ll set up a free consultation to understand your needs and create a custom plan.',
+'Do you work with startups?': 'Yes, we love helping startups build solid digital foundations that grow with your business. We’re with you from concept to launch!',
+'What makes Glitterztech stand out?': 'What sets us apart is our innovative, scalable solutions, quick delivery, and a dedicated team focused on your business success. We go above and beyond to exceed expectations!',
+'Can you help with digital marketing?': 'Yes! We provide digital marketing services, including SEO, PPC, and social media marketing to help grow your online presence and engage your audience.',
+'How do you ensure a good user experience?': 'We focus on UI/UX design that’s intuitive and responsive, ensuring a seamless experience across all devices and platforms.'
+
     };
 
     // Check if the message matches any FAQ and provide corresponding response
