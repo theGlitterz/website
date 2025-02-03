@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   chatButton.style.cursor = 'pointer';
 
   const chatIcon = document.createElement('img');
-  chatIcon.src = '/Users/vikz/Downloads/website-master/assets/img/Illustrations/Icons/Asset 8@2x.png'; // Replace with chatbot icon image URL
+  chatIcon.src = 'assets/img/Illustrations/Icons/Asset 8@2x.png'; // Replace with chatbot icon image URL
   chatIcon.style.width = '100%';
   chatIcon.style.height = '100%';
   chatIcon.style.borderRadius = '50px';
