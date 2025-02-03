@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
   chatIcon.style.width = '100%';
   chatIcon.style.height = '100%';
   chatIcon.style.borderRadius = '50px';
+  chatIcon.style.objectFit = 'contain'; // Prevent squeezing
+  chatIcon.style.minWidth = '40px';
+  chatIcon.style.minHeight = '40px'
   chatButton.appendChild(chatIcon);
   document.body.appendChild(chatButton);
 
@@ -162,7 +165,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Standard response when assistant doesn't have an answer
-  function sendMessage(message) {
+  function sendMessage(message) 
+  {
     const newMessage = document.createElement('div');
     newMessage.textContent = message;
     newMessage.style.padding = '10px';
