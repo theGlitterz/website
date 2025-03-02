@@ -127,23 +127,45 @@
     return false;
   });
 
-  // Porfolio isotope and filter
-  $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
-      layoutMode: 'fitRows'
-    });
-
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-
-      portfolioIsotope.isotope({
-        filter: $(this).data('filter')
+    // Porfolio isotope and filter
+    $(window).on('load', function() {
+      var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
       });
-      aos_init();
+  
+      $('#portfolio-filters li').on('click', function() {
+        $("#portfolio-filters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+  
+        portfolioIsotope.isotope({
+          filter: $(this).data('filter')
+        });
+        aos_init();
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        let grid = document.querySelector('.isotope-container');
+        if (grid) {
+            let iso = new Isotope(grid, {
+                itemSelector: '.isotope-item',
+                layoutMode: 'masonry'
+            });
+    
+            // Filter buttons
+            let filters = document.querySelectorAll('.portfolio-filters li');
+            filters.forEach(filter => {
+                filter.addEventListener('click', function () {
+                    let filterValue = this.getAttribute('data-filter');
+                    iso.arrange({ filter: filterValue });
+    
+                    // Change active class
+                    filters.forEach(btn => btn.classList.remove('filter-active'));
+                    this.classList.add('filter-active');
+                });
+            });
+        }
     });
-
+  
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
